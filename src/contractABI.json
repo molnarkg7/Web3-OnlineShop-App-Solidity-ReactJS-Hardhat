@@ -1,0 +1,149 @@
+{
+	"abi": [
+	  {
+		"inputs": [
+		  {
+			"internalType": "uint256",
+			"name": "_itemId",
+			"type": "uint256"
+		  }
+		],
+		"name": "buyProduct",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	  },
+	  {
+		"inputs": [
+		  {
+			"internalType": "uint256",
+			"name": "_price",
+			"type": "uint256"
+		  },
+		  {
+			"internalType": "string",
+			"name": "_description",
+			"type": "string"
+		  }
+		],
+		"name": "listProduct",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	  },
+	  {
+		"anonymous": false,
+		"inputs": [
+		  {
+			"indexed": true,
+			"internalType": "uint256",
+			"name": "itemId",
+			"type": "uint256"
+		  },
+		  {
+			"indexed": true,
+			"internalType": "address",
+			"name": "seller",
+			"type": "address"
+		  },
+		  {
+			"indexed": false,
+			"internalType": "uint256",
+			"name": "price",
+			"type": "uint256"
+		  },
+		  {
+			"indexed": false,
+			"internalType": "string",
+			"name": "description",
+			"type": "string"
+		  }
+		],
+		"name": "ProductListed",
+		"type": "event"
+	  },
+	  {
+		"anonymous": false,
+		"inputs": [
+		  {
+			"indexed": true,
+			"internalType": "uint256",
+			"name": "itemId",
+			"type": "uint256"
+		  },
+		  {
+			"indexed": true,
+			"internalType": "address",
+			"name": "buyer",
+			"type": "address"
+		  },
+		  {
+			"indexed": false,
+			"internalType": "uint256",
+			"name": "price",
+			"type": "uint256"
+		  }
+		],
+		"name": "ProductSold",
+		"type": "event"
+	  },
+	  {
+		"inputs": [],
+		"name": "productCount",
+		"outputs": [
+		  {
+			"internalType": "uint256",
+			"name": "",
+			"type": "uint256"
+		  }
+		],
+		"stateMutability": "view",
+		"type": "function"
+	  },
+	  {
+		"inputs": [
+		  {
+			"internalType": "uint256",
+			"name": "",
+			"type": "uint256"
+		  }
+		],
+		"name": "products",
+		"outputs": [
+		  {
+			"internalType": "uint256",
+			"name": "itemId",
+			"type": "uint256"
+		  },
+		  {
+			"internalType": "address",
+			"name": "seller",
+			"type": "address"
+		  },
+		  {
+			"internalType": "uint256",
+			"name": "price",
+			"type": "uint256"
+		  },
+		  {
+			"internalType": "string",
+			"name": "description",
+			"type": "string"
+		  },
+		  {
+			"internalType": "bool",
+			"name": "sold",
+			"type": "bool"
+		  }
+		],
+		"stateMutability": "view",
+		"type": "function"
+	  }
+	],
+	"networks": {
+	  "11155111": {
+		"address": "0xf958BC74D49AA7Fc699eb68cA50D5a1fD3f5aba5"
+	  }
+	}
+  }
+  
